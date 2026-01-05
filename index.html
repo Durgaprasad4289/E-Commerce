@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>E-commerce</title>
+    <link rel="icon" href="anil.png">
+    <link rel="stylesheet" href="e-commerce-1.css">
+    <link rel="stylesheet" href="e-commerce-2.css">
+    <link rel="stylesheet" href="e-commerce-3.css">
+    <link rel="stylesheet" href="e-commerce-4.css">
+    <link rel="stylesheet" href="e-commerce-5.css">
+    <link rel="stylesheet" href="e-commerce-6.css">
+    <link rel="stylesheet" href="e-commerce-7.css">
+</head>
+
+<body>
+    <!--- SEARCH BAR --->
+    <div class="searchbar">
+        <div class="name">
+            <img id="megha" src="e-commerce.png" alt="" >
+        </div>
+
+        <div class="search">
+            <input type="number" list="products" placeholder="   ALL " id="item-1">
+            <datalist id="products">
+                <option value="Mobiles"></option>
+                <option value="Shoes"></option>
+                <option value="Electronics"></option>
+                <option value="Kitchen Items"></option>
+                <option value="Dresses"></option>
+            </datalist>
+            <div class="input-logo">
+                <input type="text" id="item-2" placeholder="Search Amazon.in">
+                <p id="scan">🔍</p>
+            </div>
+        </div>
+
+        <div class="coun">
+            <img src="flag.jpg" alt="" id="flag">
+            <input type="number" list="country" id="india" placeholder="IN">
+            <datalist id="country">
+                <option value="IND"></option>
+            </datalist>
+        </div>
+        <div class="sign">
+            <p>Hello,sign in</p>
+            <b><a href="#account">Account & Lists</a></b>
+        </div>
+        <div class="order">
+            <p>Returns</p>
+            <b><a href="order">& Orders</a></b>
+        </div>
+        <div onclick="openMessage()" id="cart" >
+            <h1 onclick="openMessage()">🛒</h1>
+            <b><a href="#cart" onclick="openMessage()">Cart</a></b>
+        </div>
+    </div>
+    <!-- POP UP MESSAGE -->
+    <div class="popup">
+        <div class="mess-box">
+            <p id="into" onclick="closeMessage()">&times;</p>
+            <div class="u-cart">
+                <h2>Your Cart 🛒<hr></h2>
+            </div>
+            <p id="Item">Your Items : <span id="no-of-item">0</span></p>
+            <b id="cost">Total Bill : ₹<span id="total-cost">0</span></b>
+            <button>BUY</button>
+        </div>
+    </div>
+    <!------------- SIDEBAR --------------->
+    <input type="checkbox" name="" id="check">
+    <div class="sidebar">
+        <b class="cross"><label for="check">&#10005;</label></b>
+        <p>Today's Deals</p>
+        <p>Fresh</p>
+        <p>MX Player</p>
+        <p>Sell</p>
+        <p>BestSeller</p>
+        <p>Mobiles</p>
+        <p>Customer Service</p>
+        <p>Amazon Pay</p>
+        <p>New Releases</p>
+        <p>Electronics</p>
+        <p>Fashion</p>
+        <p>Customer Service</p>
+    </div>
+
+    <!---------------- NAVBAR ----------------->
+    <div class="navbar">
+        <div class="cart-names hamburger"><label for="check">&#9776; All</label></div>
+        <div class="cart-names">Fresh</div>
+        <div class="cart-names">MX Player</div>
+        <div class="cart-names">Sell</div>
+        <div class="cart-names">BestSeller</div>
+        <div class="cart-names">Mobiles</div>
+        <div class="cart-names">Today's Deals</div>
+        <div class="cart-names">Amazon Pay</div>
+        <div class="cart-names">New Releases</div>
+        <div class="cart-names">Electronics</div>
+        <div class="cart-names">Fashion</div>
+        <div class="cart-names">Customer Service</div>
+    </div>
+    <!-------------- SLIDER ---------------->
+
+    <div class="container">
+        <div class="slider-track">
+            <img id="myimg" src="" alt="">
+        </div>
+        <p id="lt" onclick="prev()">&#10094;</p>
+        <p id="gt" onclick="next()">&#10095;</p>
+    </div>
+
+    <!---------- PRODUCTS CONTAINER ---------->
+    <h1 id="myh1">Today Top Deals
+        <hr>
+    </h1>
+    <div class="products-container">
+        <!-- Mobiles -->
+        <div class="item-1">
+            <div class="head">
+                <h1>Mobiles
+                    <hr>
+                </h1>
+            </div>
+            <div class="item">
+                <img id="phone" src="https://m.media-amazon.com/images/I/61ca566nQ0L._AC_UY327_FMwebp_QL65_.jpg" alt="">
+                <div class="matter">
+                    <h3>iQOO Z10 5G </h3>
+                    <h1>₹24,999</h1>
+                    <p>15% off</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="matter">
+                    <h3>poco x6 pro 5G</h3>
+                    <h1>₹24,999</h1>
+                    <p>15% off</p>
+                </div>
+                <img id="phone" src="https://m.media-amazon.com/images/I/61MOQVWuJaL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+            </div>
+        </div>
+        <!-- Foot Ware -->
+        <div class="item-2">
+            <div class="head">
+                <h1>Foot Ware
+                    <hr>
+                </h1>
+            </div>
+            <div class="item">
+                <img id="shoe" src="https://m.media-amazon.com/images/I/61qJxZzMAPL._AC_SY200_.jpg" alt="">
+                <div class="matter">
+                    <h3>Campus Men</h3>
+                    <h1>₹1,067</h1>
+                    <p>44% off</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="matter">
+                    <h3>Bacca Bucci</h3>
+                    <h1>₹1,499</h1>
+                    <p>53% off</p>
+                </div>
+                <img id="shoe" src="https://m.media-amazon.com/images/I/71zOXI45I4L._AC_SY200_.jpg" alt="">
+            </div>
+        </div>
+        <!-- Watches -->
+        <div class="item-3">
+            <div class="head">
+                <h1>Watches
+                    <hr>
+                </h1>
+            </div>
+            <div class="item">
+                <img id="watch" src="https://m.media-amazon.com/images/I/41uYSN1XJbL._SR480,440_AC_.jpg" alt="">
+                <div class="matter">
+                    <h3>Boat Lunar</h3>
+                    <h1>₹1,999</h1>
+                    <p>75% off</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="matter">
+                    <h3>Noise Twist</h3>
+                    <h1>₹1,699</h1>
+                    <p>30% off</p>
+                </div>
+                <img id="watch" src="https://m.media-amazon.com/images/I/41yCQTkMJ-L._SR480,440_AC_.jpg" alt="">
+            </div>
+        </div>
+        <!-- Fashion -->
+        <div class="item-4">
+            <div class="head">
+                <h1>Fashion
+                    <hr>
+                </h1>
+            </div>
+            <div class="item">
+                <img id="fashion" src="https://m.media-amazon.com/images/I/41oxHlqVLXL._AC_UL480_FMwebp_QL65_.jpg"
+                    alt="">
+                <div class="matter">
+                    <h3>Huddie for Men</h3>
+                    <h1>₹499</h1>
+                    <p>27% off</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="matter">
+                    <h3>Women'sHoodies</h3>
+                    <h1>₹399</h1>
+                    <p>18% off</p>
+                </div>
+                <img id="fashion" src="https://images.meesho.com/images/products/463312666/lza4g_512.avif" alt="">
+            </div>
+        </div>
+        <!-- Decoration Items -->
+        <div class="item-4">
+            <div class="head">
+                <h1>Decoration Items
+                    <hr>
+                </h1>
+            </div>
+            <div class="item">
+                <img id="fashion" src="https://m.media-amazon.com/images/I/51HA9vXCpUL._AC_UL480_FMwebp_QL65_.jpg"
+                    alt="">
+                <div class="matter">
+                    <h3>Hexagon Floral</h3>
+                    <h1>₹499</h1>
+                    <p>27% off</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="matter">
+                    <h3>Key Hanger</h3>
+                    <h1>₹399</h1>
+                    <p>18% off</p>
+                </div>
+                <img id="krish" src="https://m.media-amazon.com/images/I/71p7AI7D-ZL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+            </div>
+        </div>
+        <!-- Electronics -->
+        <div class="item-4">
+            <div class="head">
+                <h1>Electronics
+                    <hr>
+                </h1>
+            </div>
+            <div class="item">
+                <img id="fashion" src="https://m.media-amazon.com/images/I/71ltsViEA8L._AC_UL480_FMwebp_QL65_.jpg"
+                    alt="">
+                <div class="matter">
+                    <h3>HeadPhones</h3>
+                    <h1>₹299</h1>
+                    <p>27% off</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="matter">
+                    <h3>BlueThooth Speakers</h3>
+                    <h1>₹399</h1>
+                    <p>18% off</p>
+                </div>
+                <img id="fashion" src="https://m.media-amazon.com/images/I/71o6CU8MqVL._AC_UY327_FMwebp_QL65_.jpg"
+                    alt="">
+            </div>
+        </div>
+        <!-- Jewellery -->
+        <div class="item-4">
+            <div class="head">
+                <h1>Jewellery
+                    <hr>
+                </h1>
+            </div>
+            <div class="item">
+                <img id="fashion" src="https://m.media-amazon.com/images/I/81C+3Hz9emL._AC_UL480_FMwebp_QL65_.jpg"
+                    alt="">
+                <div class="matter">
+                    <h3>Shining Diva Fashion</h3>
+                    <h1>₹499</h1>
+                    <p>27% off</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="matter">
+                    <h3>Diamond Neakles</h3>
+                    <h1>₹599</h1>
+                    <p>18% off</p>
+                </div>
+                <img id="fashion" src="https://m.media-amazon.com/images/I/71mYHZzSPiL._AC_UL480_FMwebp_QL65_.jpg"
+                    alt="">
+            </div>
+        </div>
+        <!-- Toys -->
+        <div class="item-4">
+            <div class="head">
+                <h1>Toys
+                    <hr>
+                </h1>
+            </div>
+            <div class="item">
+                <img id="fashion"
+                    src="https://images-eu.ssl-images-amazon.com/images/I/713PLPL-oAL._AC_UL165_SR165,165_.jpg" alt="">
+                <div class="matter">
+                    <h3>Transformers</h3>
+                    <h1>₹499</h1>
+                    <p>27% off</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="matter">
+                    <h3>MR.Cactus</h3>
+                    <h1>₹599</h1>
+                    <p>18% off</p>
+                </div>
+                <img id="fashion" src="https://m.media-amazon.com/images/I/71FqbiAQh0L._AC_UL480_FMwebp_QL65_.jpg"
+                    alt="">
+            </div>
+        </div>
+    </div>
+    <!-- CAROUSEL CONTAINER -->
+    <h1 id="myh1">Top Brands
+        <hr>
+    </h1>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="dup1">
+                <div class="card"><img id="mama" src="amazon-mamaearth.webp" alt="Mama-Earth"></div>
+                <div class="card"><img id="wow" src="amazon-wow.webp" alt="Wow"></div>
+                <div class="card"><img id="bata" src="amazon-bata.webp" alt="Bata"></div>
+                <div class="card"><img id="hima" src="amazon-himalaya.webp" alt="Himalaya"></div>
+                <div class="card"><img id="nivea" src="amazon-nivea.webp" alt="Nivea"></div>
+                <div class="card"><img id="plam" src="amazon-plam.webp" alt="Plam"></div>
+                <!-- DUPLICATES -->
+                <div class="card"><img id="mama" src="amazon-mamaearth.webp" alt="Mama-Earth"></div>
+                <div class="card"><img id="wow" src="amazon-wow.webp" alt="Wow"></div>
+                <div class="card"><img id="bata" src="amazon-bata.webp" alt="Bata"></div>
+                <div class="card"><img id="hima" src="amazon-himalaya.webp" alt="Himalaya"></div>
+                <div class="card"><img id="nivea" src="amazon-nivea.webp" alt="Nivea"></div>
+                <div class="card"><img id="plam" src="amazon-plam.webp" alt="Plam"></div>
+            </div>
+            <div class="dup2">
+                <div class="card"><img id="mama" src="amazon-mamaearth.webp" alt="Mama-Earth"></div>
+                <div class="card"><img id="wow" src="amazon-wow.webp" alt="Wow"></div>
+                <div class="card"><img id="bata" src="amazon-bata.webp" alt="Bata"></div>
+                <div class="card"><img id="hima" src="amazon-himalaya.webp" alt="Himalaya"></div>
+                <div class="card"><img id="nivea" src="amazon-nivea.webp" alt="Nivea"></div>
+                <div class="card"><img id="plam" src="amazon-plam.webp" alt="Plam"></div>
+                <!-- DUPLICATES -->
+                <div class="card"><img id="mama" src="amazon-mamaearth.webp" alt="Mama-Earth"></div>
+                <div class="card"><img id="wow" src="amazon-wow.webp" alt="Wow"></div>
+                <div class="card"><img id="bata" src="amazon-bata.webp" alt="Bata"></div>
+                <div class="card"><img id="hima" src="amazon-himalaya.webp" alt="Himalaya"></div>
+                <div class="card"><img id="nivea" src="amazon-nivea.webp" alt="Nivea"></div>
+                <div class="card"><img id="plam" src="amazon-plam.webp" alt="Plam"></div>
+            </div>
+        </div>
+    </div>
+    <!-- REAL PRODUCTS -->
+    <h1 id="myh1">Suggeted For You<hr></h1>
+    <div class="parent">
+        <!-- Men Fashion -->
+        <div class="child">
+            <div class="my-img">
+                <img src="https://i.pinimg.com/736x/38/64/00/386400df04021f95890986738692883c.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Metallic Grey Casual Shirt</h3>
+                <h1>₹599</h1>
+                <small>Free Delivery 15% off</small>
+                <p>4.4 &#10025;</p>
+                <button onclick="addToCart(599)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://i.pinimg.com/736x/c5/0b/3d/c50b3d37969daff981d944ae5a0ee827.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Maroon & White Layered Shirt</h3>
+                <h1>₹999</h1>
+                <small>Free Delivery 75% off</small>
+                <p>4.3 &#10025;</p>
+                <button onclick="addToCart(999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://i.pinimg.com/1200x/15/35/37/1535379e07b4b8a1dbf04a288763a71d.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Wine Red Party Jacket</h3>
+                <h1>₹899</h1>
+                <small>Free Delivery 80% off</small>
+                <p>4.7 &#10025;</p>
+                <button onclick="addToCart(899)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://i.pinimg.com/1200x/de/79/2c/de792c5eb879041ccffe0d42dd18d150.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Black Formal Blazer Set</h3>
+                <h1>₹499</h1>
+                <small>Free Delivery 15% off</small>
+                <p>4.5 &#10025;</p>
+                <button onclick="addToCart(499)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://i.pinimg.com/1200x/ca/79/0e/ca790e17fbe872b30c123b3b13c488bb.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>White Minimal Formal Shirt</h3>
+                <h1>₹399</h1>
+                <small>Free Delivery 43% off</small>
+                <p>4.1 &#10025;</p>
+                <button onclick="addToCart(399)">Add to cart</button>
+            </div>
+        </div>
+        <!-- Women Fashion -->
+        <div class="child">
+            <div class="my-img">
+                <img src="https://i.pinimg.com/1200x/43/4f/08/434f08e532ca97ff6be2ac38e510225c.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Mint Green Net Lehenga</h3>
+                <h1>₹2,999</h1>
+                <small>Free Delivery 15% off</small>
+                <p>4.5 &#10025;</p>
+                <button onclick="addToCart(2999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://i.pinimg.com/1200x/43/26/4c/43264c89a215b9b298fd0d4abcaddcb7.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Navy Blue Designer Gown</h3>
+                <h1>₹1,599</h1>
+                <small>Free Delivery 75% off</small>
+                <p>4.3 &#10025;</p>
+                <button onclick="addToCart(1599)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://i.pinimg.com/1200x/c6/02/71/c6027112b183cf396a342636d9abefba.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Pink Ethnic Anarkali Dress</h3>
+                <h1>₹4,999</h1>
+                <small>Free Delivery 80% off</small>
+                <p>4.8 &#10025;</p>
+                <button onclick="addToCart(4999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://www.zapdress.com/cdn/shop/files/342A4191_0049fec5-a68f-4060-bef2-80c7f6d2f936.jpg?v=1750225020"
+                    alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Black Ruffled Party Dress</h3>
+                <h1>₹1,199</h1>
+                <small>Free Delivery 15% off</small>
+                <p>4.4 &#10025;</p>
+                <button onclick="addToCart(1199)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://i.pinimg.com/736x/b0/7d/41/b07d413c7c903228e3291c4a8623efad.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Red Traditional Festive Wear</h3>
+                <h1>₹4,999</h1>
+                <small>Free Delivery 43% off</small>
+                <p>4.7 &#10025;</p>
+                <button onclick="addToCart(4999)">Add to cart</button>
+            </div>
+        </div>
+        <!-- Mobiles -->
+        <div class="child">
+            <div class="my-img">
+                <img id="mob" src="https://m.media-amazon.com/images/I/71rs4Aer71L._AC_UF480,480_SR480,480_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Samsung S25 ultra 5G</h3>
+                <h1>₹1,25,999</h1>
+                <small>Free Delivery 12% off</small>
+                <p>4.9 &#10025;</p>
+                <button onclick="addToCart(125999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img id="mob" src="https://m.media-amazon.com/images/I/618vU2qKXQL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Iphone 17 Pro 5G</h3>
+                <h1>₹1,34,990</h1>
+                <small>Free Delivery 45% off</small>
+                <p>4.5 &#10025;</p>
+                <button onclick="addToCart(134990)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img id="mob" src="https://m.media-amazon.com/images/I/61OB0B7FA-L._AC_UY327_FMwebp_QL65_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Iqoo 15 5G</h3>
+                <h1>₹45,999</h1>
+                <small>Free Delivery 25% off</small>
+                <p>4.7 &#10025;</p>
+                <button onclick="addToCart(45999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img id="mob" src="https://m.media-amazon.com/images/I/61MOQVWuJaL._AC_UY327_FMwebp_QL65_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Poco X6 Pro 5G</h3>
+                <h1>₹25,999</h1>
+                <small>Free Delivery 18% off</small>
+                <p>4.9 &#10025;</p>
+                <button onclick="addToCart(25999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img id="mob" src="https://m.media-amazon.com/images/I/61ca566nQ0L._AC_UY327_FMwebp_QL65_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Iqoo Z10 5G</h3>
+                <h1>₹25,999</h1>
+                <small>Free Delivery 18% off</small>
+                <p>4.9 &#10025;</p>
+                <button onclick="addToCart(25999)">Add to cart</button>
+            </div>
+        </div>
+        <!-- Foot Ware -->
+        <div class="child">
+            <div class="my-img">
+                <img src="https://m.media-amazon.com/images/I/61qJxZzMAPL._AC_SY200_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>WildCraft Sports Shoes</h3>
+                <h1>₹999</h1>
+                <small>Free Delivery 50% off</small>
+                <p>4.0 &#10025;</p>
+                <button onclick="addToCart(999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://brandstyle24.com/cdn/shop/files/S42545-g.jpg?v=1747524814" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Addidas Runnig Shoes</h3>
+                <h1>₹2,899</h1>
+                <small>Free Delivery 65% off</small>
+                <p>3.4 &#10025;</p>
+                <button onclick="addToCart(2899)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://m.media-amazon.com/images/I/51eJmS-9mEL._SY625_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Nike </h3>
+                <h1>₹2,999</h1>
+                <small>Free Delivery 10% off</small>
+                <p>4.4 &#10025;</p>
+                <button onclick="addToCart(2999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://m.media-amazon.com/images/I/81g0NuUrDKL._AC_UL480_FMwebp_QL65_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Skechers</h3>
+                <h1>₹5,999</h1>
+                <small>Free Delivery 19% off</small>
+                <p>4.4 &#10025;</p>
+                <button onclick="addToCart(5999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/adidas-superstars-1630098660.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*"
+                    alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Addidas Sneakers</h3>
+                <h1>₹5,999</h1>
+                <small>Free Delivery 25% off</small>
+                <p>4.9 &#10025;</p>
+                <button onclick="addToCart(5999)">Add to cart</button>
+            </div>
+        </div>
+        <!-- Eelectronic -->
+        <div class="child">
+            <div class="my-img">
+                <img src="https://m.media-amazon.com/images/I/41uYSN1XJbL._SR480,440_AC_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Boat Lunar Discovery</h3>
+                <h1>₹1,499</h1>
+                <small>Free Delivery 50% off</small>
+                <p>4.5 &#10025;</p>
+                <button onclick="addToCart(1499)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://m.media-amazon.com/images/I/716CRTrQzgL._SX522_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Boat Airpodes</h3>
+                <h1>₹1,399</h1>
+                <small>Free Delivery 65% off</small>
+                <p>4.6 &#10025;</p>
+                <button onclick="addToCart(1399)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://m.media-amazon.com/images/I/71D1EB5iDzL._SX679_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Zebronics HeadPhones </h3>
+                <h1>₹749</h1>
+                <small>Free Delivery 10% off</small>
+                <p>4.9 &#10025;</p>
+                <button onclick="addToCart(749)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img src="https://m.media-amazon.com/images/I/71kq1LpXmAL._AC_UL480_QL65_.jpg" alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Lenovo Ideacentre AMD Ryzen 7</h3>
+                <h1>₹52,999</h1>
+                <small>Free Delivery 19% off</small>
+                <p>4.7 &#10025;</p>
+                <button onclick="addToCart(52,999)">Add to cart</button>
+            </div>
+        </div>
+        <div class="child">
+            <div class="my-img">
+                <img id="cam"
+                    src="https://s3ng.cashify.in/cashify/store/product/47b6cb96f4fb4b8d8c135698d5bf96c1.jpg?w=576&dpr=1.3"
+                    alt="">
+            </div>
+            <div class="pic-details">
+                <h3>Canon Digital Camera</h3>
+                <h1>₹5,990 </h1>
+                <small>Free Delivery 25% off</small>
+                <p>4.9 &#10025;</p>
+                <button onclick="addToCart(5,990)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- BACK TO TOP -->
+    <div onclick="backToTop()" class="top">Back To Top</div>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="foot-elements">
+            <div class="foot">
+                <h3>Get to Know Us</h3>
+                <p><a id="my-a" href="">About Amazon</a></p>
+                <p><a id="my-a" href="">Careers</a></p>
+                <p><a id="my-a" href="">Press Releases</a></p>
+                <p><a id="my-a" href="">Amazon Science</a></p>
+            </div>
+            <div class="foot">
+                <h3>Connect with Us</h3>
+                <p><a id="my-a" href="">Facebook</a></p>
+                <p><a id="my-a" href="">Twitter</a></p>
+                <p><a id="my-a" href="">Instagram</a></p>
+            </div>
+            <div class="foot">
+                <h3>Make Money with Us</h3>
+                <p><a id="my-a" href="">Sell on Amazon</a></p>
+                <p><a id="my-a" href="">Sell under Amazon Accelerator</a></p>
+                <p><a id="my-a" href="">Protect and Build Your Brand</a></p>
+                <p><a id="my-a" href="">Amazon Global Selling</a></p>
+                <p><a id="my-a" href="">Supply to Amazon</a></p>
+                <p><a id="my-a" href="">Become an Affiliate</a></p>
+                <p><a id="my-a" href="">Fulfilment by Amazon</a></p>
+                <p><a id="my-a" href="">Advertise Your Products</a></p>
+                <p><a id="my-a" href="">Amazon Pay on Merchants</a></p>
+            </div>
+            <div class="foot">
+                <h3>Let Us Help You</h3>
+                <p><a id="my-a" href="">Your Account</a></p>
+                <p><a id="my-a" href="">Returns Centre</a></p>
+                <p><a id="my-a" href="">Recalls and Product Safety Alerts</a></p>
+                <p><a id="my-a" href="">100% Purchase Protection</a></p>
+                <p><a id="my-a" href="">Amazon App Download</a></p>
+                <p><a id="my-a" href="">Help</a></p>
+            </div>
+        </div>
+        <div class="change-lang">
+            <img id="foot-img" src="e-commerce-2.jpeg"
+                alt="">
+            <input type="text" list="lang-list" id="my-lang" placeholder="🌐 English">
+            <datalist id="lang-list">
+                <option value="🌐 English">English</option>
+                <option value="🌐 Hindi">Hindi</option>
+                <option value="🌐 Telugu">Telugu</option>
+                <option value="🌐 Tamil">Tamil</option>
+                <option value="🌐 Kannada">Kannada</option>
+                <option value="🌐 Malayalam">Malayalam</option>
+                <option value="🌐 Bengali">Bengali</option>
+                <option value="🌐 Marathi">Marathi</option>
+                <option value="🌐 Gujarati">Gujarati</option>
+                <option value="🌐 Punjabi">Punjabi</option>
+                <option value="🌐 Urdu">Urdu</option>
+            </datalist>
+            <div class="con">
+                <img src="flag.jpg" class="fg" alt="">
+                <p>India</p>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Conditions of Use & Sale | Privacy Notice | Interest-Based Ads | © 1996-2024, E-commerce.com, Inc. or its
+                affiliates</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- IMAGE SLIDER  -->
+<script>
+    let img = document.getElementById("myimg");
+    let i = 0,j=0,sum=0;
+    let a = [
+        "amazon-kitchen.jpg",
+        "amazon-pedigree.jpg",
+        "amazon-ponds.jpg",
+        "amazon-Tshirt.jpg",
+        "amazon-mobiles.jpg",
+        "amazon-earpods.jpg",
+        "amazon-mahi.jpg"
+    ];
+
+    function showImg(direction) {
+        img.style.animation = "none";
+        img.offsetHeight;   // reset animation
+        img.src = a[i];
+
+        if (direction === "next") {
+            img.style.animation = "slideLeft 0.5s ease";
+        } else {
+            img.style.animation = "slideRight 0.5s ease";
+        }
+    }
+
+    function next() {
+        i++;
+        if (i >= a.length) i = 0;
+        showImg("next");
+    }
+
+    function prev() {
+        i--;
+        if (i < 0) i = a.length - 1;
+        showImg("prev");
+    }
+
+    setInterval(next, 4000);
+
+    function backToTop() {
+        window.scrollTo({ top: "0", behavior: "smooth" });
+    }
+    function addToCart(price) {
+        j++;
+        sum+=price;
+        console.log(j);
+        console.log(sum);
+        document.getElementById("no-of-item").textContent=j;
+        document.getElementById("total-cost").textContent=sum;
+    }
+    function openMessage(){
+        document.querySelector(".popup").style.display = "flex";
+    }
+    
+    function closeMessage(){
+        document.querySelector(".popup").style.display = "none";
+    }
+    
+</script>
+
+<!-- NO.OF OBJECTS IN CART -->
+
+<script>
+</script>

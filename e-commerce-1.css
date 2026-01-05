@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* ------ search bar------ */
+.searchbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background: #202935;
+    /*#010115; */
+    padding: 4px;
+    gap: 15px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    left: 0;
+    font-family: 'Arial', 'sans-serif';
+    z-index: 9999;
+    box-shadow: 0 0 2px #000;
+}
+
+/* ----- name ----- */
+.name {
+    width: 320px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+#megha{
+    width: 100%;
+    height: 300%;
+    margin-right: 20px;
+    object-fit: contain;
+    opacity: 1;
+    transform: translateX(1em);
+    cursor: pointer;
+}
+
+
+/* ------ input ----- */
+.search {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    margin-left: 15px;
+    align-items: center;
+    color: #ffffff;
+    gap: 2px;
+    padding: 2px;
+}
+
+#item-1 {
+    width: 10%;
+    height: 100%;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Arial', 'sans-serif';
+    outline: none;
+    caret-color: transparent;
+    background: #e1dada;
+}
+
+.input-logo {
+    width: 93%;
+    height: 100%;
+    position: relative;
+}
+
+.searchbar a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#item-2 {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-family: 'Arial', 'sans-serif';
+    outline: none;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+    margin-left: 1px;
+}
+#item-2:focus {
+    border: solid 3px #ffAf1c;
+    box-shadow: inset 0 0 5px #ffAf1c;
+    transition: all 0.1s ease-in-out;
+}
+/* ------ MAGNIFING GLASS ------- */
+#scan {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 50px;
+    font-size: 24px;
+    padding: 2px;
+    cursor: pointer;
+    height: 100%;
+}
+
+/* ---------- COUNTRY ----------- */
+.coun {
+    width: 6%;
+    height: 90%;
+    color: #000;
+    border-radius: 3px;
+    padding: 3px;
+    margin-left: -3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+    gap: 0;
+    background: #ffffff;
+}
+
+#flag {
+    width: 35%;
+    height: 30px;
+    object-fit: contain;
+    cursor: pointer;
+    margin-left: 1.5px;
+    cursor: pointer;
+    padding: 2px;
+}
+
+#india {
+    width: 75%;
+    height: 100%;
+    cursor: pointer;
+    caret-color: transparent;
+    padding: 7px;
+    border-radius: 3px;
+    font-family: 'Arial', 'sans-serif';
+    outline: none;
+    font-size: 16px;
+    border: none;
+    color: #000;
+    margin-left: -4px;
+}
+
+/* ------- SIGN-IN ------- */
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 8%;
+    height: 90%;
+    border-radius: 3px;
+    background: #ffffff;
+    color: #000;
+}
+
+.sign a {
+    color: #000;
+    font-size: 13px;
+    font-family: 'Arial', 'sans-serif';
+}
+
+.sign p {
+    font-family: 'Arial', 'sans-serif';
+    font-size: 15px;
+}
+
+/* ------- ORDERS ------- */
+.order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 7%;
+    height: 90%;
+    border-radius: 3px;
+    background: #ffffff;
+}
+.order p{
+    font-family: 'Arial', 'sans-serif';
+}
+.order a {
+    color: #000;
+    font-family: 'Arial', 'sans-serif';
+}
+
+#cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7%;
+    height: 90%;
+    border-radius: 3px;
+    background: #ffffff;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+#cart a {
+    font-size: 17px;
+    color: #000;
+    font-family: 'Arial', 'sans-serif';
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+#item-1::-webkit-input-placeholder,
+#india::-webkit-input-placeholder {
+    color: #000;
+    font-weight: bold;
+}
+
+.sign:hover,
+.order:hover,
+#cart:hover {
+    background: #d5d3d3;
+}
+
+/* -----------  pop up message   ------------ */
+.popup{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    inset: 0;
+    background: rgb(0,0,0,.7);
+    z-index: 100000000;
+    transition: all .5s ease;
+}
+
+.mess-box{
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffffff;
+    border-radius: 10px;
+    gap: 20px;
+}
+#into{
+    position: absolute;
+    top: 15px;
+    font-size: 30px;
+    cursor: pointer;
+    right:15px ;
+}
+
+.u-cart h2 hr{
+    height: 4px;
+    width: 100%;
+    border-radius: 5px;
+    background: #ff0000;
+}
+
+#Item,#cost{
+    font-size: 16px;
+}
+.mess-box button{
+    width: 80%;
+    padding: 7px;
+    border-radius: 3px;
+    background: yellow;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+}

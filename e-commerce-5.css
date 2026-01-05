@@ -1,0 +1,80 @@
+.carousel-container{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#myh1{
+    font-family: 'Arial', 'sans-serif';
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333333;
+    text-align: center;
+}
+#myh1 hr{
+    width: 50%;
+    border: 1px solid #ef2809;
+    margin-top: 10px;
+    margin-left: 25%;
+    border-radius: 5px;
+}
+.carousel{
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    background: #ffffff;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+}
+.card img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.dup1,.dup2{
+    display: flex;
+    justify-content: space-evenly;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.carousel:hover .dup1,
+.carousel:hover .dup2{
+    animation-play-state: paused;
+}
+#mama,#wow,#bata,#hima,#nivea,#plam{
+    transition: all .4s ease;
+}
+#mama:hover,#wow:hover,#bata:hover,#hima:hover,#nivea:hover,#plam:hover{
+    transform: translateY(-1em);
+    transition: all .4s ease;
+    cursor: pointer;
+}
